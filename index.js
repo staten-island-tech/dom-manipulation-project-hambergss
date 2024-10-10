@@ -2,14 +2,13 @@ const DOMSelectors = {
   header: document.querySelector("h1"),
   items: document.querySelectorAll("li"),
   cardHeader: document.querySelector(".card-header"),
-  button: document.querySelector("btn"),
-  form: document.querySelectorAll(".form"),
+  button: document.querySelector(".btn"),
+  form: document.querySelector("form"),
   container: document.querySelector("container"),
 };
 
 DOMSelectors.button.addEventListener("click", function (event) {
   console.log(event.target.parentElement);
-  event.target.parentElement.style.backgroundColor = "red";
 });
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -19,7 +18,18 @@ DOMSelectors.form.addEventListener("submit", function (event) {
 //select all buttons as nodelist (can use for each
 const buttons = document.querySelectorAll("button");
 //make array from buttons if i want to use filter etc.
+const newButtons = Array.from(buttons);
+//iterate through array and change each button color
+newButtons.forEach((button) => (button.style.backgroundColor = "#d1c4e9"));
 
+newButtons.forEach((button) =>
+  button.addEventListener("click", function (event) {})
+);
+
+DOMSelectors.container.insertAdjacentHTML(
+  "beforeend",
+  `<div class="card"><h2 class="card-header">${movie.title}}</h2></div>`
+);
 
 //create the HTML for inputs, cards, and container aka where the cards go
 

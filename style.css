@@ -1,3 +1,4 @@
+
 body,
 html,
 * {
@@ -10,4 +11,9 @@ html,
 
 h1 {
   text-align: center;
+}
+
+button {
+  height: 10rem;
+  width: 20rem;
 }
