@@ -10,6 +10,10 @@ html,
 
 body {
   background-color: rgb(255, 240, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -20,21 +24,71 @@ h2 {
   font-size: 3rem;
 }
 
-li {
-  font-size: 1.5rem;
-}
-
-form {
-  height: 5rem;
-  width: 15rem;
-  margin: 1rem auto;
+.movie-form {
+  margin: 1rem;
   padding: 1rem;
+  width: 20%;
 }
 
-button {
-  height: 2.5rem;
-  width: 8rem;
-  border:rgb(132, 60, 150) solid 2px;
-  border-radius: 5px;
-  
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #93d195;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6ea171;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgb(209, 254, 206);
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 40px); /* Responsive for 3 cards in a row */
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.remove-btn {
+  background-color: rgb(228, 139, 139);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: rgb(143, 87, 87);
 }

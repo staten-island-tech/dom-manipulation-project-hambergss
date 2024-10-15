@@ -1,37 +1,33 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Create Hoyoverse Character Cards</h1>
-    <br />
-    <div class="card">
-      <h2 class="card=header">Type These Requirements to Create a Card</h2>
-      <br />
-    </div>
-    <form action="" class="form">
-      <ul>
-        <li>
-          <label for="Input 1">1. Game they're from</label>
-          <input type="text" id="input1" name="input1">
-        </li>
-        <li>
-          <label for="Input 2">2. Character name</label>
-          <input type="text" id="input2" name="input2">
-        </li>
-        <li>
-          <label for="Input 3">3. Element, If they have</label>
-          <input type="text" id="input3" name="input3">
-        </li>
-      </ul>
-      <button class="btn" type="submit">Submit</button>
-    </form>
-    <div class="container">
-      <!-- <div class="card"><h2 class="card-header">Some text</h2></div> -->
-    </div>
-    <script src="index.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoyo Card Creator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<h1>Add Your Hoyoverse Character</h1>
+
+<!-- Form 1 -->
+<div class="hoyo-form">
+    <label for="title1">Game Name:</label>
+    <input type="text" class="game-input" id="game" required>
+</div>
+
+<!-- Form 2 -->
+<div class="hoyo-form">
+    <label for="genre">Character Name:</label>
+    <input type="text" class="character" id="character" required>
+</div>
+
+<!-- Shared Submit Button -->
+<button class="submit-all btn">Add Your Hoyo Character</button>
+
+<!-- Container for the movie cards -->
+<div class="card-container"></div>
+
+<script src="index.js"></script>
+
+</body>
 </html>
