@@ -3,7 +3,7 @@ const DOMSelectors = {
   gameInput: document.querySelector(".game-input"),
   characterInput: document.querySelector(".character-input"),
   container: document.querySelector(".card-container"),
-  submitButton: document.querySelector(".submit-all")
+  submitButton: document.querySelector(".submit-all"),
 };
 
 // Constructor function to create Hoyo objects with gameName and characterName
@@ -11,7 +11,7 @@ function createHoyo(game, character) {
   return { game, character, type: "Hoyo" };
 }
 
-// Function to insert a movie card into the DOM
+// Function to insert a hoyo card into the DOM
 function insertCard(hoyo) {
   const cardHTML = `
     <div class="card">
@@ -20,7 +20,7 @@ function insertCard(hoyo) {
       <p><strong>Genre:</strong> ${hoyo.character}</p>
       <button class="remove-btn">Remove</button>
     </div>`;
-  
+
   DOMSelectors.container.insertAdjacentHTML("beforeend", cardHTML);
 }
 

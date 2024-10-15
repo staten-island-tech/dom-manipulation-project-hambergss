@@ -31,9 +31,10 @@ h2 {
 }
 
 label {
-  display: block;
+  display: inline-block;
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 2rem;
 }
 
 input {
@@ -71,8 +72,12 @@ input {
   margin: 10px;
   border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(33% - 40px); /* Responsive for 3 cards in a row */
   box-sizing: border-box;
+  width: 28rem;
+  height: 35rem;
+  font-size: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .card h2 {
