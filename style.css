@@ -24,8 +24,7 @@ h2 {
   font-size: 3rem;
 }
 
-.movie-form {
-  margin: 1rem;
+.hoyo-form {
   padding: 1rem;
   width: 20%;
 }
@@ -71,7 +70,7 @@ input {
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 12px #78b77a;
   box-sizing: border-box;
   width: 28rem;
   height: 35rem;

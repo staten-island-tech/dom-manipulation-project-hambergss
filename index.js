@@ -16,8 +16,8 @@ function insertCard(hoyo) {
   const cardHTML = `
     <div class="card">
       <h2>${hoyo.type.toUpperCase()}</h2>
-      <p><strong>Title:</strong> ${hoyo.game}</p>
-      <p><strong>Genre:</strong> ${hoyo.character}</p>
+      <p><strong>Game:</strong> ${hoyo.game}</p>
+      <p><strong>Character:</strong> ${hoyo.character}</p>
       <button class="remove-btn">Remove</button>
     </div>`;
 
@@ -32,10 +32,10 @@ DOMSelectors.submitButton.addEventListener("click", function () {
 
   // Only add the card if all fields are filled
   if (game && character) {
-    // Create a single movie object with all input values
+    // Create a single hoyo object with all input values
     const hoyo = createHoyo(game, character);
 
-    // Insert one card with all the combined movie information
+    // Insert one card with all the combined hoyo information
     insertCard(hoyo);
 
     // Clear the form inputs after submission
