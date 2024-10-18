@@ -29,6 +29,7 @@ h2 {
   width: 60rem;
 }
 
+
 label {
   display: inline-block;
   font-weight: bold;
@@ -40,32 +41,31 @@ label {
 /* Style for input fields inside the form */
 form input[type="text"],
 form input[type="url"] {
-    width: 100%; /* Full width of the container */
-    max-width: 400px; /* Optional max-width for better control */
-    height: 40px; /* Adjust the height as needed */
-    font-size: 16px; /* Increase font size for better readability */
-    padding: 10px; /* Add padding for better spacing */
-    margin: 10px 0; /* Add margin for spacing between inputs */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Optional max-width for better control */
+  height: 40px; /* Adjust the height as needed */
+  font-size: 16px; /* Increase font size for better readability */
+  padding: 10px; /* Add padding for better spacing */
+  margin: 10px 0; /* Add margin for spacing between inputs */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Rounded corners */
 }
 
 /* Optional: Style for the button */
 form button.submit-all {
-    padding: 10px 20px; /* Padding for the button */
-    font-size: 16px; /* Button font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #007BFF; /* Button background color */
-    color: white; /* Button text color */
-    transition: background-color 0.3s; /* Smooth transition on hover */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 16px; /* Button font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  transition: background-color 0.3s; /* Smooth transition on hover */
 }
 
 form button.submit-all:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3; /* Darker shade on hover */
 }
-
 
 .card-container {
   display: flex;
