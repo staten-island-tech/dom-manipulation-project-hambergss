@@ -1,40 +1,38 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoyo Card Creator</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <h1>Add Your Hoyoverse Character</h1>
 
-<h1>Add Your Hoyoverse Character</h1>
-
-<!-- Form -->
-<form id="hoyoForm">
-    <div class="hoyo-form">
+    <!-- Form -->
+    <form id="hoyoForm">
+      <div class="hoyo-form">
         <label for="game">Game Name:</label>
-        <input type="text" class="game-input" id="game" required>
-    </div> 
+        <input type="text" class="game-input" id="game" required />
+      </div>
 
-    <div class="hoyo-form">
+      <div class="hoyo-form">
         <label for="character">Character Name:</label>
-        <input type="text" class="character-input" id="character" required>
-    </div>
+        <input type="text" class="character-input" id="character" required />
+      </div>
 
-    <div class="hoyo-form">
+      <div class="hoyo-form">
         <label for="image">Image URL:</label>
-        <input type="url" class="image-input" id="image">
-        <img id="previewImage" alt="Image Preview">
-    </div>
+        <input type="url" class="image-input" id="image" />
+      </div>
 
-    <!-- Shared Submit Button -->
-    <button type="button" class="submit-all btn">Add</button>
-</form>
+      <!-- Shared Submit Button -->
+      <button type="button" class="submit-all btn">Add</button>
+    </form>
 
-<!-- Container for the movie cards -->
-<div class="card-container"></div>
+    <!-- Container for the movie cards -->
+    <div class="card-container"></div>
 
-<script src="index.js"></script>
-
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

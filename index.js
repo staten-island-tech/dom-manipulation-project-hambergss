@@ -36,10 +36,6 @@ DOMSelectors.imageInput.addEventListener("input", () => {
   if (isValidUrl(url)) {
     DOMSelectors.previewImage.src = url;
     DOMSelectors.previewImage.style.display = "block";
-    DOMSelectors.previewImage.alt = "Image Preview";
-    DOMSelectors.previewImage.style.maxWidth = "100%";
-    DOMSelectors.previewImage.style.height = "auto";
-    DOMSelectors.previewImage.style.objectFit = "contain";
   } else {
     DOMSelectors.previewImage.style.display = "none";
   }
