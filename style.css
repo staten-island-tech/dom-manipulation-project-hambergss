@@ -36,7 +36,7 @@ h2 {
   margin: 0 auto; /* Center the image */
   object-fit: contain; /* Ensures the image scales properly within the card */
   border-radius: 5px;
-  border: 2px solid #e5ffe6;
+  border: 3px solid #58955b;
 }
 
 label {
