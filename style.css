@@ -187,7 +187,7 @@ form button.submit-all {
 
   .card {
     width: 30%; /* 3 cards per row */
-    height: 50rem; /* Adjust card height */
+    height: 40rem; /* Adjust card height */
     margin: 2rem auto; /* Slightly smaller margin for medium screens */
   }
 
@@ -217,7 +217,7 @@ form button.submit-all {
 
   .card {
     width: 45%; /* 2 cards per row */
-    height: 45rem; /* Adjust card height */
+    height: 35rem; /* Adjust card height */
     margin: 1.5rem auto; /* Adjust margin for tablet screens */
   }
 
