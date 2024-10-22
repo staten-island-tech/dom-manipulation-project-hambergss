@@ -85,7 +85,7 @@ DOMSelectors.container.addEventListener("click", function (event) {
 // Helper function to validate URLs
 function isValidUrl(url) {
   try {
-    new URL(url); // Standard MDN URL validation
+    new URL(url);
     return true;
   } catch (_) {
     return false;
