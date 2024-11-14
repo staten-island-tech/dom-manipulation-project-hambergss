@@ -220,7 +220,7 @@ form button.submit-all {
   }
 
   .card {
-    width: 45%; /* 2 cards per row */
+    width: 50%; /* 2 cards per row */
     height: 35rem; /* Adjust card height */
     margin: 1.5rem auto; /* Adjust margin for tablet screens */
   }
